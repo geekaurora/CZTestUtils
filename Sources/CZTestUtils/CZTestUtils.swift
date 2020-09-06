@@ -8,7 +8,13 @@ public class CZTestUtils {
   }
   
   /// Returns tuple of`WaitExpectation` closure and XCTestExpectation.
-  /// Call `expectation.fulfill()` to fulfill the expectation.
+  ///
+  /// ### Usage
+  /// ```
+  /// let (waitExpectation, expectation) = CZTestUtils.waitWithInterval(20, testCase: self)
+  /// waitExpectation()
+  /// ```
+  /// Then call `expectation.fulfill()` to fulfill the expectation.
   ///
   /// - Parameters:
   ///   - interval: the internal of timeout
